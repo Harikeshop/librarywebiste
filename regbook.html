@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<SCRIPT language="JavaScript">
+    <!--hide
+    
+    var password;
+    
+    var pass1="letmeenter";
+    
+    password=prompt('Please enter your password to view this page!',' ');
+    
+    if (password==pass1){
+      alert('Password Correct! Click OK to enter!');
+    }
+
+    else
+       {
+       	alert("Wrong password");
+        window.location="index.html";
+        }
+
+    
+    //-->
+    </SCRIPT>
+	<style type="text/css">
+		#form{
+			margin: auto;
+			border: 5px solid blue;
+			padding: 5px;
+			width: 90%;
+			background: yellow;
+
+		}
+
+		#normal{
+			width: 50%;
+			padding: 5px;
+			margin: 2px;
+		}
+
+		input{
+			background: red;
+			color: yellow;
+		}
+
+		::placeholder{
+			color: yellow;
+			font-size: 15px;
+		}
+
+		#mybtn{
+			padding: 10px;
+			width: 50%;
+			margin: 10px;
+			background: green;
+			color: white;
+		}
+		hr{
+			color: black;
+		}
+
+		body{
+			background: linear-gradient(to top , rgb(192, 122, 170), rgb(194, 216, 75))
+		}
+
+	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>REGISTERBOKKS</title>
+</head>
+<body>
+	<h1 style="text-align: center;">GIVE BOOK DETAILS</h1>
+	<div id="form">
+	<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScVRKvlj_J_V5pGujOKyLVK9-XbUuixHXbrByweezebmCs3Sg/formResponse" target="_self" method="POST">
+		<input id="normal" type="number" name="entry.257964568" placeholder="Number" required="Please fill this fiels"><br>
+		<input id="normal" type="text" name="entry.794281302" placeholder="Book Name" required="Please fill this fiels"><br>
+		<input id="normal" type="text" name="entry.11110838" placeholder="Author Name" required="Please fill this fiels"><br>
+		<input id="normal" type="number" name="entry.336031167" placeholder="Price" required="Please fill this fiels"><br>
+		<label style="text-align: center; font-size: 20px;">Availability</label><br>
+		<hr>
+		<label>Yes</label>
+		<input id="radio"  type="radio" name="entry.585271458" required="Please fill this fiels" value="Yes"><br>
+		<label>No</label>
+		<input  id="radio"   type="radio" name="entry.585271458" required="Please fill this fiels" value="No"><br>
+		<label>May be</label>
+		<input  id="radio"   type="radio" name="entry.585271458" required="Please fill this fiels" value="Maybe"><br>
+		<button type="submit" name="submit" id="mybtn">Submit</button>
+		<script type="text/javascript">
+			document.getElementById("mybtn").onclick = function(){
+				alert('You are done');
+				window.location.href = "index.html";
+			}
+		</script>
+		</form>
+		</div>
+	
+</body>
+</html>
