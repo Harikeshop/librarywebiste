@@ -1,6 +1,56 @@
 <!doctype html>
 <html lang="en">
 <head>
+	<script>
+		 
+    /*function check(e)
+    {
+    alert(e.keyCode);
+    }*/
+    document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {//Alt+c, Alt+v will also be disabled sadly.
+                alert('not allowed');
+				window.location.href("index.html");
+            }
+            return false;
+    };
+	</script>
+	<script>
+		   document.onkeypress = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+           //alert('No F-12');
+            return false;
+        }
+    }
+    document.onmousedown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            //alert('No F-keys');
+            return false;
+        }
+    }
+document.onkeydown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            //alert('No F-keys');
+            return false;
+        }
+    }
+	</script>
+	<SCRIPT language=JavaScript>
+
+		<!-- http://www.spacegun.co.uk -->
+		
+		var message = "function disabled";
+		
+		function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+		
+		if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+		
+		document.onmousedown = rtclickcheck;
+		
+		</SCRIPT>
 <SCRIPT language="JavaScript">
     <!--hide
     
@@ -24,6 +74,7 @@
     //-->
     </SCRIPT>
 	<style type="text/css">
+
 		#form{
 			margin: auto;
 			border: 5px solid blue;
@@ -95,7 +146,6 @@
 			}
 		</script>
 		</form>
-		</div>
-	
+		</div>>
 </body>
 </html>
